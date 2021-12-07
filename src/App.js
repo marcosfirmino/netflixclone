@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-anonymous-default-export */
 import React, { useEffect, useState } from 'react'
@@ -6,6 +7,7 @@ import Tmdb from './Tmdb'
 import MovieRow from './components/MovieRow'
 import FeaturedMovie from './components/FeaturedMovie'
 import Header from './components/Header'
+import Loading from './assets/loading.gif'
 
 
 export default () => {
@@ -57,6 +59,12 @@ export default () => {
         Direitos de imagem para Netflix<br/>
         Dados pegos do site <a href="https://www.themoviedb.org/" target="_blank">Themoviedb.org</a>
       </footer>
+
+      {movieList.length <= 0 &&
+        <div className="loading">
+          <img src={Loading} alt='Carregando'/>  
+        </div>
+      }
     </div>
   )
 }
