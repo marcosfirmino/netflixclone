@@ -1,8 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { Description } from "@material-ui/icons";
 import React from "react";
 import './FeaturedMovie.css'
-
 
 export default ({item}) => {
 

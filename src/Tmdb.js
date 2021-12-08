@@ -53,7 +53,11 @@ export default {
         title: 'Documentários',
         items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
       },
-      
+      {
+        slug: 'western',
+        title: 'Faroeste',
+        items: await basicFetch(`/discover/movie?with_genres=37&language=pt-BR&api_key=${API_KEY}`)
+      },
     ];
   },
 
