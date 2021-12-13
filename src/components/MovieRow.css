@@ -10,6 +10,13 @@
   overflow-x: hidden;
 }
 
+@media (max-width: 760px) {
+  .movieRow--listarea {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
+
 .movieRow--list {
   transition: all ease 0.5s;
 }
@@ -43,6 +50,13 @@
   cursor: pointer;
   opacity: 0;
   transition: all ease 0.5s;
+}
+
+@media (max-width: 760px) {
+  .movieRow--left,
+  .movieRow--right {
+    display: none;
+  }
 }
 
 .movieRow--left {
