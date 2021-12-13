@@ -38,3 +38,9 @@ footer a {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 760px) {
+  .loading {
+    width: 70%;
+  }
+}
